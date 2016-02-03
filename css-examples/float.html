@@ -1,0 +1,36 @@
+<!-- floating is great for things like wrapping text around an image -->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>The Float Property</title>
+
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Floating Content</h1>
+		<div class="quote">
+			A shadow is never created in darkness. It is born of light. We can be blind to it and blinded by it. Our shadow asks us to look at what we don't want to see. If we refuse to face our shadow, it will project itself on someone else so we have no choice but to engage.
+		</div>
+		<figure>
+			<img  class="feature-image"src="img/still-life-sm.jpg" alt="still life photo">
+		</figure>
+
+		<h2>Floating Problems</h2>
+		<p>
+			Using the float property is both straightforward and confounding due to its effect on other content. If you float an element, say an image, left and set it's width to 50 percent, the remaining 50 percent of the space will be filled with the adjacent content. In this situation the floated box appears on top of the top left corner of the adjacent box, and the content is moved out of the way by the float property. If we want two equal adjacent boxes we can choose to float them both to the left, or float one left and one right.
+		</p>
+		<p>
+			The challenge appears when a floated element interects with another block level element in an unexpected way. Say for example that you float an image to the left and want to display a heading next to it. Depending on how that heading is set up, it may clear left, meaning it can't have any floated content to the left of it. This would push the heading down below the floated item. This could be something you want, or it could be a mistake. Knowing how floats and clears work will help you find the right solution here and prevent confusion.
+		</p>
+		<p>
+			All elements can be cleared left, right, or both, and this will impact how they are displayed next to floated items. If they're cleared they appear above or below. If they're not cleared they appear adjacent. 
+		</p>
+		<p>
+			Using floats and clears we can create advanced layouts and designs, but these properties have severe limitations. For example, it's challenging to create two equal height columns using floats and clears. It's also challenging to create a virtual column under a floated item.
+		</p>
+
+	</body>
+</html>

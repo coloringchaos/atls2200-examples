@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Display Property</title>
+
+		<style type="text/css">
+		
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Understanding the Display property</h1>
+		<p>
+			Every HTML element has a default <code>display</code> property setting, most commonly either <code>block</code> - as in the case of headings, paragraphs, blockquotes, lists, divs, and HTML5 semantic dividers like section, nav, article, aide, header, and footer - or <code>inline</code> - as emphasized and strongly emphasized, links, spans, and images. Now that we know how to manipulate the box itself we can look at how it interacts with other adjacent boxes, and this all starts with the display property.
+		</p>
+		<p>
+			Let's look at <code>display: block</code> and <code>display: inline</code> first. 
+		</p>
+		<p>
+			<code>display: block</code> makes the box into a block level element meaning it spans the full width of available space and that no other content will display to the left or right. When adding padding, border, and margin to block level elements they add to the size of the box, and push all other content away. 
+		</p>
+		<p>
+			<code>display: inline</code> makes the box into an in-line element that appears on the same baseline as the adjacent text. The box is literally in line with the other content. When adding margin, padding, and border to an inline element, the horizontal axis grow and the vertical axis are added relative to the normal position of the box. This means the overall box can end up either covering or being covered by lines above and below the content itself. If you need an item to remain inline, but still behave like a block level element, you can change its display property to inline block. When you do this, it's important to remember that the size of the inline block box will override any line height, and force the lines further apart.
+		</p>
+	</body>
+</html>

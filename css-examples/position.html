@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Position is Everything!</title>
+
+		<style type="text/css">
+		h1{
+			text-align: center;
+		}
+
+
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Position is Everything</h1>
+		<p>
+			When we first set up a document, whether it be with type or HTML, all the content is placed based on its natural position. That means the boxes are displayed one after the other in the natural flow of the content. 
+		</p>
+		<figure class="feature-image">
+			<img  src="img/still-life-sm.jpg" alt="still life photo">
+			<figcaption>A still life image.</figcaption>
+		</figure>
+		<p>
+			In CSS we can change the position of an element in various ways and it all starts with understanding the position property. 
+		</p>
+		<p>
+			When an HTML element is added to a document, its default position is static. That means the element will be placed in the normal flow of the content.
+		</p>
+		<p>
+			If we change position to relative, we can use the top, right, bottom, left and zed index properties to position the box relative to its original location without changing the overall layout. This is a kint to cutting out a word or an image from a document and moving it somewhere else. A hole is left where it used to be, and the box may end up overlapping other content. <strong><em>The position of an element is often set to relative not to move it, but to make it a reference box for positioning of other contained elements.</em></strong>
+		</p>
+
+		<p>
+			Whereas position relative allows us to position a box relative to its original position. <strong><em>Position absolute pulls the box out of its natural location, and positions it relative to the closest position ancestor to the containing block, aka the full document as rendered in the browser.</em></strong> Since the box its pulled out of its original document context, no hole is left and the remaining content will fill in the space available. If we position a box absolutely on a page, it will be placed in the top left-hand corner of the view port and we can use top, right, bottom, left, and zed index to further specify its position.
+		</p>
+		<p>
+			If the box lives inside another box, that has its position set to something other than static, it will be positioned relative to the top-left corner of that containing box. Absolute positioning is typically used to do things like place text on top of an image, or lock a specific element to the bottom of another larger ancestor container. 
+		</p>
+		<p>
+			<strong><em>Position fixed works much like position absolute with one major difference that the position is relative to the view port.</em></strong>This means fixed items would top and left set to 2ems will always appear 2ems from the top-left corner, no matter where you are in the document. So as I scroll up and down, it remains fixed. The box is literally fixed to the view port.
+		</p>
+	</body>
+</html>
