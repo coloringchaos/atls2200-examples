@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Contents Appearance</title>
+
+		<style type="text/css">
+		h1{
+			text-align: center;
+		}
+		p{
+			font-size:1.2em;
+			line-height: 1.5em;
+		}
+		.highlight{
+			font-family: Arial;
+			font-size: 1em;
+			font-style: italic;
+			word-spacing: .2em;
+			/*text-indent: 2em;*/
+			text-align: center;
+			text-transform: none;
+			text-decoration: none;
+			color:white;
+			text-shadow: 1px 1px 2px black;
+
+			border: 5px black double;
+			border-radius: 2em;
+			box-shadow: 3px 3px 5px gray;
+
+			padding:15px 20px;
+
+			background-image: url(img/nature.jpg);
+			background-size: cover;
+		}
+
+		#headshot{
+			width: 200px;
+			height:200px;
+			background-image:url(img/headshot.jpg);
+			background-position: center;
+			background-size: cover;
+			border-radius: 300px;
+
+			margin: auto;
+		}
+
+
+		</style>
+	</head>
+
+	<body>
+		<h1>Changing the Appearance of Text Contents Within the Box</h1>
+		<p>
+			If we work from the inside out, the first thing we can do with the CSS box is change the appearance of the contents within the box. Because the nature of the box is mainly as a text layout tool a large number of properites we have available to us erlate to how text is displayed. 
+		</p>
+		<p class="highlight">
+			As you've seen before the most basic change you can mek is to th econtents in the box is changing the font. We can change the font-family, providing either a single or a list of fonts for the browser to use. We can also change the font size, font weight, and font style, from normal to italic to oblique.
+		</p>
+		<div id="headshot">
+		</div>
+
+
+	</body>
+</html>
