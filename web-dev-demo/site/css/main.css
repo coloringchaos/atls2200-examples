@@ -1,0 +1,678 @@
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,900");
+
+
+/*  ----------------  RESET  ----------------  */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+/*  ----------------  BOX MODEL  ----------------  */
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*  ----------------  BASIC STYLING STUFF  ----------------  */
+
+body {
+	background: #f3f6fa;
+}
+
+body, input, select, textarea {
+	color: #7c8081;
+	font-family: 'Lato', sans-serif;
+	font-size: 13pt;
+	font-weight: 300;
+	letter-spacing: 0.025em;
+	line-height: 1.75em;
+}
+
+a {
+	color: #3fb1a3;
+	text-decoration: none;
+	border-bottom: dotted 1px;
+}
+
+strong, b {
+	font-weight: 400;
+}
+
+p, ul, ol, dl, table, blockquote {
+	margin: 0 0 2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: inherit;
+	font-weight: 300;
+	line-height: 1.75em;
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: inherit;
+	text-decoration: none;
+	border: 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+}
+
+h3 {
+	font-size: 1.15em;
+	letter-spacing: 0.025em;
+}
+
+
+/*  ----------------  ICON STYLING  ----------------  */	
+
+/* this is for the check marks*/
+#main .icon{
+	padding-bottom: 1em;
+	opacity: .5;
+}
+
+.icon {
+	text-decoration: none;
+	font-size: 4em;
+}
+
+	/* sets FontAwesome as the font family so the icons will be displayed - SUPER IMPORTANT!! */
+	.icon:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+	}
+
+	/*for the circle icons in the footer */
+	.icon.circle {
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		border: 0;
+		border-radius: 100%;
+		display: inline-block;
+		font-size: 1.25em;
+		height: 2.25em;
+		left: 0;
+		line-height: 2.25em;
+		text-align: center;
+		text-decoration: none;
+		top: 0;
+		width: 2.25em;
+	}
+
+		.icon.circle:hover {
+			top: -0.2em;
+		}
+
+
+	/* ALL OF THIS IS FOR THE ICONS IN THE FOOTER - setting and changing colors on hover */
+
+		.icon.circle.fa-twitter {
+			background: #70aecd;
+			color: #fff;
+		}
+
+			.icon.circle.fa-twitter:hover {
+				background: #7fb7d2;
+			}
+
+		.icon.circle.fa-facebook {
+			background: #7490c3;
+			color: #fff;
+		}
+
+			.icon.circle.fa-facebook:hover {
+				background: #829bc9;
+			}
+
+		.icon.circle.fa-google-plus {
+			background: #db6b67;
+			color: #fff;
+		}
+
+			.icon.circle.fa-google-plus:hover {
+				background: #df7b77;
+			}
+
+		.icon.circle.fa-github {
+			background: #dcad8b;
+			color: #fff;
+		}
+
+			.icon.circle.fa-github:hover {
+				background: #e1b89b;
+			}
+
+		.icon.circle.fa-dribbble {
+			background: #da83ae;
+			color: #fff;
+		}
+
+			.icon.circle.fa-dribbble:hover {
+				background: #df93b8;
+			}
+
+	.icon > .label {
+		display: none;
+	}
+
+	/* this makes the icons smaller for when the browser is small - this is set to bigger in the media query below */
+	.icon.circle {
+		font-size: 1em;
+	}
+
+
+
+/*  ----------------  LISTS - used for buttons   ----------------  */
+
+ol, ul {
+    list-style: none;
+}
+
+ol.default {
+	list-style: decimal;
+	padding-left: 1.25em;
+}
+
+	ol.default li {
+		padding-left: 0.25em;
+	}
+
+ul.default {
+	list-style: disc;
+	padding-left: 1em;
+}
+
+	ul.default li {
+		padding-left: 0.5em;
+	}
+
+ul.buttons {
+	cursor: default;
+}
+
+	ul.buttons:last-child {
+		margin-bottom: 0;
+	}
+
+	ul.buttons li {
+		display: inline-block;
+		/*padding: 0 0 0 1.5em;*/
+	}
+
+	ul.buttons.vertical li {
+		display: block;
+		padding: 1.5em 0 0 0;
+	}
+
+/*		ul.buttons.vertical li:first-child {
+			padding: 0;
+		}*/
+
+
+/*  ----------------  BUTTON STYLING  ----------------  */
+
+.button {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	background: none;
+	border: solid 1px;
+	color: inherit;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.8em;
+	font-weight: 900;
+	letter-spacing: 2px;
+	min-width: 18em;
+
+	line-height: 3.75em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.button:hover {
+	background: rgba(232, 238, 244, .4);
+	border-color: inherit;
+}
+
+.button.special {
+	background: #83d3c9;
+	border-color: #83d3c9;
+	color: #fff !important;
+}
+
+.button.special:hover {
+	background: #96dad1 !important;
+	border-color: #96dad1 !important;
+}
+
+
+/*  ----------------  BANNER SECTION  ----------------  */	
+
+#banner {
+	background-attachment: scroll, scroll, scroll, fixed;
+	background-color: #645862;
+	background-image: url("../images/light-bl.svg"), url("../images/light-br.svg"), url("../images/overlay.png"), url("../images/banner.jpg");
+	background-position: bottom left, bottom right, top left, top center;
+	background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+	background-size: 25em, 25em, auto, cover;
+	color: #fff;
+	cursor: default;
+	padding: 6em 0;
+	text-align: center;
+}
+
+#banner .inner {
+	background: rgba(52, 27, 43, 0.5);
+	color: #fff;
+	display: inline-block;  /* this makes it NOT span the full browser width */
+	padding: 3em;
+}
+
+#banner .inner header {
+	display: inline-block;
+	border-bottom: solid 2px;
+	border-top: solid 2px;
+	margin: 0 0 2em 0;
+	padding: 3px 0 3px 0;
+}
+
+#banner .inner header h2 {
+	border-bottom: solid 2px;
+	border-top: solid 2px;
+	font-size: 2.5em;
+	font-weight: 900;
+	letter-spacing: 0.2em;
+	margin: 0;
+	padding-left: 0.05em;
+	position: relative;
+	text-transform: uppercase;
+}
+
+/* styling the p text inside the featured part of banner */
+#banner .inner p {
+	letter-spacing: 0.1em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+/* the button is the footer, this adds more space around it */
+#banner .inner footer {
+	margin: 2em 0 0 0;
+}
+
+
+/*  ----------------  MAIN   ----------------  */
+
+/* for adding svg lines*/
+#main {
+	background-image: url("../images/dark-tl.svg"), url("../images/dark-tr.svg"), url("../images/dark-bl.svg"), url("../images/dark-br.svg");
+	background-position: top left, top right, bottom left, bottom right;
+	background-repeat: no-repeat;
+	background-size: 25em;
+	padding: 7em 0;
+}
+
+
+/*  ----------------  SECTION & ARTICLE  ----------------  */
+
+section.special, article.special {
+	/* centers all content in main parts of my page */
+	text-align: center;
+}
+
+
+/*  ----------------  HEADER (in main section) ----------------  */
+header.special {
+	margin-bottom: 5em;
+	text-align: center;
+}
+header h2{
+	margin-top:1.5em;
+}
+header p{
+	width:80%;
+	margin:0 auto;
+}
+
+/* add margin to icon in main header section */
+.header-icon{
+	font-size: 4em;
+	opacity:.5;
+}
+
+/*  ----------------  SECTION 1 STYLING - teal box  ----------------  */
+.wrapper.style1 {
+	padding:5em;
+	background-color: #83d3c9;
+	background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+	background-position: bottom left, bottom right;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 25em, 25em;
+	color: #fff;
+}
+
+		.wrapper.style1 .button:hover {
+			background: rgba(255, 255, 255, 0.15) !important;
+		}
+
+		.wrapper.style1 .button.special {
+			background: #fff;
+			border-color: #fff;
+			color: #83d3c9 !important;
+		}
+
+			.wrapper.style1 .button.special:hover {
+				border-color: inherit !important;
+				color: #fff !important;
+			}
+
+
+/*  ----------------  SECTION 2 STYLING - three things  ----------------  */	
+.wrapper.style2 {
+	padding: 0;
+}
+
+.row header{
+	padding-top: 1.8em;
+}
+.row{
+	margin:5em auto;
+}
+
+.col1{
+	text-align: center;
+	width:85%;
+	margin:0 auto;
+}
+
+.col2{
+	text-align: center;
+	width:85%;
+	margin:0 auto;
+}
+
+.col3{
+	text-align: center;
+	width:85%;
+	margin:0 auto;
+}
+
+
+
+/*  ----------------  SECTION 3 STYLING - portfolio stuff  ----------------  */	
+
+.portfolio-item header{
+	margin-top: 2em;
+}
+
+.wrapper.style3 {
+	background: #fff;
+	color: inherit;
+	padding:1em 0 5em 0;
+}
+
+
+
+/*  ---------------  CTA SECTION  ---------------  */
+
+#cta {
+	background-attachment: scroll, scroll, scroll, fixed;
+	background-color: #645862;
+	background-image: url("../images/light-tl.svg"), url("../images/light-tr.svg"), url("../images/overlay.png"), url("../images/banner.jpg");
+	background-position: top left, top right, top left, bottom center;
+	background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+	background-size: 25em, 25em, auto, cover;
+	color: #fff;
+	padding: 5em;
+	text-align: center;
+}
+
+	#cta header {
+		margin-bottom: 2em;
+	}
+
+	#cta ul.buttons li {
+		padding: 0 .5em 0 .5em;
+	}
+
+
+
+/*  ---------------  FOOTER SECTION  ---------------  */
+
+#footer {
+	background: #E8EEF4;
+	color: #7c8081;
+	padding: 5em 1em 4em 1em;
+	text-align: center;
+}
+
+	/* makes copyright line small */
+	#footer .copyright {
+		font-size: 0.8em;
+		line-height: 1em;
+	}
+
+	/* displays footer stuff inline-block rather than block, separate with dotted bar */
+		#footer .copyright li {
+			display: inline-block;
+			margin-left: 1em;
+			padding-left: 1em;
+			border-left: dotted 1px;
+		}
+
+			/* gets rid of additional bar in front of copyright symbol */
+			#footer .copyright li:first-child {
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+
+
+/* footer icon styling */
+ul.icons {
+	cursor: default;
+	width:100%;
+}
+
+	ul.icons li {
+		display: inline-block;
+		line-height: 1em;
+		padding-left: 0.5em;
+	}
+
+		ul.icons li:first-child {
+			padding-left: 0;
+		}
+
+
+
+/*  -------------------------------------------------  */	
+/*  ----------------  MEDIA QUERIES  ----------------  */	
+/*  -------------------------------------------------  */	
+
+@media(min-width: 400px){
+	.container{
+		margin:0 auto;
+	}
+
+
+	/* -------- SECTION TWO STUFF ------ */
+	.col1{
+		width:90%;
+	}
+	.col2{
+		width:90%;
+	}
+	.col3{
+		width:90%;
+	}
+
+
+	/* -------- PORTFOLIO SECTION STYLING ------ */
+	.portfolio-item section{
+		width:80%;
+		margin:0 auto;
+	}
+	.image.featured img {
+		display: block;
+		width: 100%;
+	}
+
+
+}
+
+@media(min-width: 800px){
+	.container{
+		width:95%;
+	}
+
+	/* -------- SECTION TWO STUFF ------ */
+	.col1{
+		width:70%;
+	}
+	.col2{
+		width:70%;
+	}
+	.col3{
+		width:70%;
+	}
+
+	/* -------- PORTFOLIO SECTION STYLING ------ */
+	.portfolio-row{
+		padding:30px;
+	}
+
+	.portfolio-item{
+		padding:10px;
+		width:50%;
+		float:left;
+	}
+
+	.image.featured img {
+		display: block;
+		width: 100%;
+	}
+
+
+	/* -------- BOTTOM ICONS ------ */
+	.icon.circle {
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		border: 0;
+		border-radius: 100%;
+		display: inline-block;
+		font-size: 1.25em;
+		height: 2.25em;
+		left: 0;
+		line-height: 2.25em;
+		text-align: center;
+		text-decoration: none;
+		top: 0;
+		width: 2.25em;
+	}
+}
+
+@media(min-width: 1100px){
+	.container{
+		width:80%;
+		margin:0 auto;
+	}
+
+
+	/* -------- SECTION TWO STUFF ------ */
+	.row{
+		width:910px;
+		margin:5em auto;
+	}
+	.col1{
+		display:inline-block;
+		width:300px;
+	}
+	.col2{
+		display:inline-block;
+		width:300px;	
+	}
+	.col3{
+		display:inline-block;
+		width:300px;
+	}
+
+
+	/* -------- PORTFOLIO SECTION STYLING ------ */
+
+	.portfolio-row{
+		padding:30px;
+	}
+
+	.portfolio-item{
+		padding:10px;
+		width:50%;
+		float:left;
+	}
+
+	.image.featured img {
+		display: block;
+		width: 100%;
+	}
+
+}
+
+
+
