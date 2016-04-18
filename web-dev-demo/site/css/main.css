@@ -478,7 +478,7 @@ header p{
 	background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 	background-size: 25em, 25em, auto, cover;
 	color: #fff;
-	padding: 5em;
+	padding: 5em 0 5em 0;
 	text-align: center;
 }
 
@@ -488,6 +488,15 @@ header p{
 
 	#cta ul.buttons li {
 		padding: 0 .5em 0 .5em;
+	}
+
+	#cta li{
+		padding:0px;
+		    margin-bottom: 1em;
+	}
+
+	#cta footer{
+		width:100%;
 	}
 
 
