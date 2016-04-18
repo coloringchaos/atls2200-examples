@@ -1,4 +1,4 @@
-# HOW TO USE THIS REPO: 
+## HOW TO USE THIS REPO
 
 To see a finished example of this project - see the files inside the 'site' directory.
 
